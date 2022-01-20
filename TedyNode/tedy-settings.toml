@@ -1,0 +1,22 @@
+ip = "172.16.30.30"
+service_id = "cs30"
+workers = 2
+max_threads = 160
+par_ncore = 80
+python = "/home/tedy/anaconda3/bin/python"
+node_dir = "/home/tedy/node"
+repo_dir = "/home/tedy/repo"
+data_dir = "/data"
+rpc_port = 5000
+ssh_user = ""
+ssh_port = 22
+ssh_passwd = ""
+message_topic = [ "tedy1.0,node:cs30",]
+system_broker_addr_s = "tcp://172.16.30.3:17902"
+system_broker_addr_p = "tcp://172.16.30.3:17901"
+service_type = "node"
+name = "cs30"
+
+[mongodb]
+host = "172.16.30.3"
+port = 27018

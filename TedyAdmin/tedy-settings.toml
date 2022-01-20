@@ -1,0 +1,105 @@
+
+[default]
+system_broker_addr_p="tcp://172.16.30.3:17901"
+# repo_dir="/Users/scott/Desktop/projects/Tedy"
+repo_dir="/Users/admin/Desktop/projects/Tedy"
+
+[mongodb]
+host = '172.16.30.3'
+port =  27018
+
+
+[node_template]
+python = '/home/tedy/anaconda3/bin/python'
+node_dir = '/home/tedy/node'
+repo_dir = '/home/tedy/repo'    # 工程项目目录
+data_dir = '/data'    # 同步存储的工作数据 ，每个project一个目录
+rpc_port = 5000
+ssh_user = ''
+ssh_port = 22
+ssh_passwd = ''
+# mx_addr="tcp://localhost:17901"
+message_topic=['2.0,node:node']
+system_broker_addr_s="tcp://172.16.30.3:17902"
+system_broker_addr_p="tcp://172.16.30.3:17901"
+service_type='node'
+workers = 1 # 默认一个worker，某些场景一个worker中并行创建N个并发进程
+max_threads = 128
+par_ncore = 80
+
+# [nodes.cs3]
+# ip = '127.0.0.1'
+# ssh_port = 2022
+# service_id = 'cs3'
+# data_dir = '/mnt/Data/tedy-data'
+
+[nodes.cs4]
+ip = '172.16.30.4'
+service_id = 'cs4'
+workers = 1
+max_threads = 128
+par_ncore = 80
+#
+[nodes.cs5]
+ip = '172.16.30.5'
+service_id = 'cs5'
+workers = 1
+max_threads = 128
+par_ncore = 80
+
+[nodes.cs6]
+ip = '172.16.30.6'
+service_id = 'cs6'
+workers = 1
+max_threads = 128
+par_ncore = 80
+
+[nodes.cs7]
+ip = '172.16.30.7'
+service_id = 'cs7'
+workers = 1
+max_threads = 128
+par_ncore = 80
+
+[nodes.cs8]
+ip = '172.16.30.8'
+service_id = 'cs8'
+workers = 1
+max_threads = 128
+par_ncore = 80
+
+[nodes.cs9]
+ip = '172.16.30.9'
+service_id = 'cs9'
+workers = 1
+max_threads = 128
+par_ncore = 80
+
+[nodes.cs10]
+ip = '172.16.30.10'
+service_id = 'cs10'
+workers = 1
+max_threads = 128
+par_ncore = 80
+
+[nodes.cs11]
+ip = '172.16.30.11'
+service_id = 'cs11'
+workers = 1
+max_threads = 128
+par_ncore = 80
+
+[nodes.cs12]
+ip = '172.16.30.12'
+service_id = 'cs12'
+workers = 1
+max_threads = 128
+par_ncore = 80
+
+[nodes.cs30]
+ip = '172.16.30.30'
+service_id = 'cs30'
+workers = 2
+max_threads = 160
+par_ncore = 80
+

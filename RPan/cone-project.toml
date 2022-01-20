@@ -1,0 +1,27 @@
+
+[default]
+project_name="rpan"
+author = "scott"
+date = "2021/7/30"
+data_dir="/data/stock_data"
+# data_dir="/Users/scott/Desktop/5173"
+# nodes=['cs4','cs5']
+nodes=['cs4','cs5','cs6','cs7','cs8','cs9','cs10','cs11','cs12','cs30']
+exec_time_limit = 0  # 最长执行时间 min，由于异常导致的worker失效，可忽略此worker，调度程序切换进入下一个任务 ， 0 - 无限等待
+
+[handlers]
+task_split="tedyuser.task_split"
+project_deploy = "tedyuser.project_deploy"
+data_deploy = "tedyuser.data_deploy"
+main_entry = "tedyuser.computating"
+project_clean = "tedyuser.project_clean"
+
+[dependencies]
+package = ['redis-server']
+pip = ['fire','pymongo','pyzmq']
+
+[params]
+period = 12
+kb =10.1
+
+#

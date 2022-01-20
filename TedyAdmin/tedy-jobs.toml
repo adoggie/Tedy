@@ -1,0 +1,8 @@
+[default]
+system_broker_addr_p="tcp://172.16.30.3:17901"
+
+[job1]
+task=['RPan','RPan','RPan']
+start = "18:30"
+end = ""
+
